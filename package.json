@@ -1,8 +1,8 @@
 {
+  "homepage": "https://DmitriyBartenev.github.io/CRUD-app",
   "name": "my-react-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmitriybartenev.github.io/CRUD-app",
   "dependencies": {
     "@babel/core": "^7.16.0",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
@@ -60,6 +60,8 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -135,5 +137,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
